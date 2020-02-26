@@ -1,0 +1,30 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 300px;
+    margin: 30px auto;
+    padding: 0 16px;
+}
+
+code {
+    background-color: #d6d6d6;
+    color: black;
+    height: auto;
+    display: block;
+    padding: 8px;
+}
+
+.bad-practice-css {
+    color: red;
+}
+
+.console-error, .small-code {
+    color: red;
+    background-color: #fff0f0;
+    border: 1px solid #ffd6d6;
+}

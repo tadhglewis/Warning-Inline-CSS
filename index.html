@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Warning-Inline-CSS</title>
+        <meta name="Description" content="Extremely lightweight inline CSS detector. Because inline CSS sucks">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Warning-Inline-CSS</h1>
+            <h2>Extremely lightweight inline CSS detector.</h2>
+            <p>Because inline CSS sucks</p>
+
+            <p style="background-color:red; color: white;">Never do this</p>
+
+            <code>
+                &lt;p <span class="bad-practice-css">style=&quot;background-color: red; color: white;&quot;</span>&gt;Never do this&lt;/p&gt;
+            </code>
+
+            <p>Otherwise you'll get this in your Console</p>
+            
+            <code class="console-error">
+                Warning-Inline-CSS: Inline CSS detected...
+            </code>
+
+            <p>And a nice little message containing the element so you can remove the inline CSS</p>
+
+            <h3>Installation</h3>
+            
+            <p>Add The following right before the closing <span class="small-code">&lt;/body&gt;</span> tag</p>
+
+            <code>
+                &lt;script src=&quot;warninginlinecss.js&quot;&gt;&lt;/script&gt;
+            </code>
+
+        </div>
+
+        <script src="warninginlinecss.js"></script>
+    </body>
+</html>
